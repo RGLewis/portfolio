@@ -1,4 +1,5 @@
-.header-content-container {
+// Header shape and background styles
+.header-container {
     width: 100%;
     min-height: 80vh;
     position: relative;
@@ -9,7 +10,13 @@
     background: $background-darker;
 }
 
+// Header Content flex and padding
+.header-content-container {
+    padding-top: 200px;
+}
+
+// TO DELETE
 .test {
-    padding: 30vh;
+    padding-top: $dip-padding;
     background: $background-lighter;
 }

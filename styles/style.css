@@ -147,7 +147,7 @@ ul {
 a {
   text-decoration: none; }
 
-h1, p {
+h1, h2, h3, p {
   margin: 0; }
 
 /* Wrapper styles */
@@ -161,22 +161,28 @@ html {
   font-size: 125%; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6; }
 
 h1 {
   font-family: "Bungee Shade", cursive;
   font-size: 2.5rem;
   color: #05386b; }
 
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #05386b; }
+
 .dip-bottom {
   display: block;
   position: absolute;
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   -webkit-clip-path: polygon(68% 36%, 0 0, 100% 0);
   clip-path: polygon(68% 36%, 0 0, 100% 0); }
 
-.header-content-container {
+.header-container {
   width: 100%;
   min-height: 80vh;
   position: relative;
@@ -185,6 +191,62 @@ h1 {
 .header-dip {
   background: #f3f3f3; }
 
+.header-content-container {
+  padding-top: 200px; }
+
 .test {
-  padding: 30vh;
-  background: #fdfdfd; }
+  padding-top: 30vh;
+  background: white; }
+
+.hamburger-menu {
+  border: 2px solid #05386b;
+  padding: 20px;
+  border-radius: 50%; }
+  .hamburger-menu .menu-bar {
+    border-radius: 2px;
+    display: block;
+    margin: 3px auto;
+    width: 30px;
+    height: 5px;
+    background: #5cdb95; }
+
+.nav-container {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  background: tomato; }
+  .nav-container .nav-button-container {
+    width: 10%; }
+  .nav-container .nav-list {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .nav-container .nav-list .nav-item {
+      margin: 0 5%; }
+      .nav-container .nav-list .nav-item .nav-anchor {
+        padding: 10px;
+        color: #05386b;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        border: 2px solid transparent; }
+        .nav-container .nav-list .nav-item .nav-anchor:hover {
+          border-bottom: 2px solid #5cdb95; }
+        .nav-container .nav-list .nav-item .nav-anchor:active, .nav-container .nav-list .nav-item .nav-anchor:focus {
+          border: 2px solid #5cdb95; }

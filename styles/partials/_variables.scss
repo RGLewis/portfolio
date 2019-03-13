@@ -2,9 +2,18 @@
 $body-font: 'Roboto', sans-serif;
 $accent-font: 'Bungee Shade', cursive;
 
+// Font weights
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
 // Colors
 $background-darker: rgb(243,243,243);
-$background-lighter: rgb(253, 253, 253);
+$background-lighter: rgb(255,255,255);
 $text: rgb(54, 53, 55);
 $accent-light: rgb(92, 219, 149);
 $accent-dark: rgb(5, 56, 107);
+
+// Padding
+$dip-padding: 30vh;
