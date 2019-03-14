@@ -1,9 +1,13 @@
 // Menu styles
 .hamburger-menu {
-    border: 2px solid $accent-dark;
+    border: 2px solid transparent;
+    border-radius: 50%;
     padding: 20px;
-    border-radius: 50%; 
     z-index: 5;
+
+    &:active, &:focus {
+        border-color: $accent-dark;
+    }
 
     .menu-bar {
         border-radius:2px;
@@ -18,6 +22,8 @@
 .nav-container {
     padding: 20px 0;
     width: 100%;
+    // background: $accent-light;
+    // position: fixed;
 }
 
 .nav-list {
