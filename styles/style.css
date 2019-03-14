@@ -153,7 +153,7 @@ h1, h2, h3, p {
 /* Wrapper styles */
 .wrapper {
   max-width: 1600px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
 
 /* Font and Background Styles */
@@ -211,7 +211,11 @@ h3 {
     background: #5cdb95; }
 
 .nav-container {
-  padding-top: 20px;
+  padding: 20px 0;
+  width: 100%; }
+
+.nav-list {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,34 +223,30 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 100%;
-  min-height: 10px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: fixed;
-  background: tomato; }
-  .nav-container .nav-button-container {
-    width: 10%; }
-  .nav-container .nav-list {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    .nav-container .nav-list .nav-item {
-      margin: 0 5%; }
-      .nav-container .nav-list .nav-item .nav-anchor {
-        padding: 10px;
-        color: #05386b;
-        font-weight: 700;
-        letter-spacing: 1px;
-        font-size: 1.3rem;
-        border: 2px solid transparent; }
-        .nav-container .nav-list .nav-item .nav-anchor:hover {
-          border-bottom: 2px solid #5cdb95; }
-        .nav-container .nav-list .nav-item .nav-anchor:active, .nav-container .nav-list .nav-item .nav-anchor:focus {
-          border: 2px solid #5cdb95; }
+  width: 90%;
+  -webkit-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  transform: translateX(110%);
+  top: 35px;
+  margin: 0;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s; }
+  .nav-list .nav-item {
+    margin: 0 5%; }
+    .nav-list .nav-item .nav-anchor {
+      padding: 10px;
+      color: #05386b;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1.3rem;
+      border: 2px solid transparent; }
+      .nav-list .nav-item .nav-anchor:hover {
+        border-bottom: 2px solid #5cdb95; }
+      .nav-list .nav-item .nav-anchor:active, .nav-list .nav-item .nav-anchor:focus {
+        border: 2px solid #5cdb95; }
+
+.show-nav-list {
+  -webkit-transform: translateX(5%);
+  -ms-transform: translateX(5%);
+  transform: translateX(5%); }
