@@ -1,18 +1,21 @@
 .about-section {
     padding-top: $dip-padding;
     background: $background-lighter;
+    // TO DELETE
+    padding-bottom: 20px;
 }
 
 .about-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .svg-container {
-    width: 50%;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .about-content-container {
-    background: tomato;
-    width: 50%;
+    width: 60%;
 }

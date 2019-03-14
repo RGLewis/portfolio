@@ -36,12 +36,21 @@ body {
     font-family: $body-font;
     line-height: 1.6;
     scroll-behavior: smooth;
+    color: $accent-dark;
 }
 
 h1 {
     font-family: $accent-font;
     font-size: 4rem;
     color: $accent-dark;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: $black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
 }
 
 h3 {
@@ -82,8 +91,12 @@ h3 {
     }
 }
 
+.underline {
+    border-bottom: 1px solid $accent-light;
+    padding: 0 20px 10px 20px;
+}
 
-
+// SVG Animation
 .path {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
@@ -99,5 +112,7 @@ h3 {
   }
 }
 
-
-
+// SVG placement
+svg {
+    transform: translateX(20%);
+}
