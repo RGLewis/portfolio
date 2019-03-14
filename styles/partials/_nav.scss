@@ -3,6 +3,7 @@
     border: 2px solid $accent-dark;
     padding: 20px;
     border-radius: 50%; 
+    z-index: 5;
 
     .menu-bar {
         border-radius:2px;
@@ -27,7 +28,7 @@
     transform: translateX(110%);
 	top: 35px;
     margin: 0;
-    transition: all 1.5s;
+    transition: all 2s;
 
     .nav-item {
         margin: 0 5%;

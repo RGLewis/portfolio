@@ -12,7 +12,26 @@
 
 // Header Content flex and padding
 .header-content-container {
-    padding-top: 200px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .logo-content-container {
+        width: 100%;
+        text-align: center
+    }
+
+    .headshot-container {
+        width: 400px;
+        height: 400px;
+        
+        .dev-headshot {
+            border-radius: 50%;
+            border: 5px solid $accent-light;
+        }
+    }
 }
 
 // TO DELETE

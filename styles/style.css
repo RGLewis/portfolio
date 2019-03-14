@@ -166,7 +166,7 @@ body {
 
 h1 {
   font-family: "Bungee Shade", cursive;
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #05386b; }
 
 h3 {
@@ -192,7 +192,27 @@ h3 {
   background: #f3f3f3; }
 
 .header-content-container {
-  padding-top: 200px; }
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header-content-container .logo-content-container {
+    width: 100%;
+    text-align: center; }
+  .header-content-container .headshot-container {
+    width: 400px;
+    height: 400px; }
+    .header-content-container .headshot-container .dev-headshot {
+      border-radius: 50%;
+      border: 5px solid #5cdb95; }
 
 .test {
   padding-top: 30vh;
@@ -201,7 +221,8 @@ h3 {
 .hamburger-menu {
   border: 2px solid #05386b;
   padding: 20px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 5; }
   .hamburger-menu .menu-bar {
     border-radius: 2px;
     display: block;
@@ -229,9 +250,9 @@ h3 {
   transform: translateX(110%);
   top: 35px;
   margin: 0;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s; }
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
   .nav-list .nav-item {
     margin: 0 5%; }
     .nav-list .nav-item .nav-anchor {
