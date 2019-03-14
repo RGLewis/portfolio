@@ -28,7 +28,8 @@
     transform: translateX(110%);
 	top: 35px;
     margin: 0;
-    transition: all 2s;
+    transition-timing-function: ease;
+    transition: all 500ms;
 
     .nav-item {
         margin: 0 5%;

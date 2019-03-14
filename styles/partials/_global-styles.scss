@@ -35,6 +35,7 @@ html {
 body {
     font-family: $body-font;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -58,4 +59,25 @@ h3 {
     height: 55vh;
     -webkit-clip-path: polygon(68% 36%, 0 0, 100% 0);
     clip-path: polygon(68% 36%, 0 0, 100% 0);
+}
+
+.down-icon-container {
+    padding: 20px 0;
+
+    .down {
+        font-size: 2rem;
+        color: $accent-light;
+        transition: all 300ms;
+        padding: 10px;
+        border: 2px solid transparent;
+
+       &:hover {
+            transform: scale(1.3);
+        }
+
+        &:active, &:focus {
+            border: 2px solid $accent-light;
+            border-radius: 50%;
+        }
+    }
 }
