@@ -201,6 +201,24 @@ h3 {
       border: 2px solid #5cdb95;
       border-radius: 50%; }
 
+.path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: draw 2s ease-in-out alternate 0s infinite;
+  animation: draw 2s ease-in-out alternate 0s infinite; }
+
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 500; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 500; }
+  to {
+    stroke-dashoffset: 0; } }
+
 .header-container {
   width: 100%;
   position: relative;
