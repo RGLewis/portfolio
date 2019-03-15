@@ -1,0 +1,49 @@
+.skills-section {
+    position: relative;
+    padding-top: $dip-bottom-padding;
+    background: $background-darker;
+}
+
+.skills-container {
+    width: 100%;
+    position: relative;
+}
+
+.skills-intro-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+}
+
+.skills-intro-content-container {
+    width: 50%;
+}
+
+.skills-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skills-item {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: $medium;
+    width: calc(100% / 3);
+    margin-top: 26px;
+}
+
+.skills-icon {
+    display: block;
+    margin-bottom: 5px;
+}
+
+// Skills dip
+.skills-dip {
+    background: $background-darker;
+}

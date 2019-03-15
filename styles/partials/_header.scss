@@ -5,13 +5,9 @@
     background: $background-darker;
 }
 
-.header-dip {
-    background: $background-darker;
-}
-
 // Header Content flex and padding
 .header-content-container {
-    padding-top: 10px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -31,4 +27,9 @@
             border: 7px solid $accent-light;
         }
     }
+}
+
+// Header dip background
+.header-dip {
+    background: $background-darker;
 }

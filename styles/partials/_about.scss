@@ -1,21 +1,25 @@
 .about-section {
-    padding-top: $dip-padding;
+    padding-top: $dip-bottom-padding;
     background: $background-lighter;
-    // TO DELETE
-    padding-bottom: 20px;
 }
 
 .about-container {
+    position: relative;
+}
+
+.about-flex-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-}
-
-.svg-container {
-    width: 40%;
-    margin: 0 auto;
+    min-height: 10vh;
+    align-items: center;
 }
 
 .about-content-container {
     width: 60%;
+}
+
+// Section dip
+.about-dip {
+    background: $background-lighter;
 }

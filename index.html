@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -17,11 +19,11 @@
 
         <!-- Header Container starts -->
         <div class="header-container">
-                <!-- Wrapper stars -->
-                <div class="wrapper">
-
-                    <!-- Nav -->
-                    <nav class="nav-container">
+            
+            <!-- Nav -->
+            <nav class="nav-container">
+                    <!-- Wrapper stars -->
+                    <div class="nav-wrapper">
                         <!-- Nav button -->
                         <div class="nav-button-container">
                             <button class="hamburger-menu menu-button">
@@ -38,7 +40,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-anchor menu-button">Work</a>
+                                <a href="#skills" class="nav-anchor menu-button">Skills</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#work" class="nav-anchor menu-button">Work</a>
                             </li>
 
                             <li class="nav-item">
@@ -64,7 +70,7 @@
                         <!-- Down icon -->
                         <div class="down-icon-container">
                             <a href="#about" class="down-anchor down icon-dark-background">
-                                <i class="fas fa-chevron-down down"></i>
+                                <i class="fas fa-chevron-down down-icon"></i>
                             </a>
                         </div>
 
@@ -73,11 +79,12 @@
 
                 <!-- Wrapper ends -->
                 </div>
+
+                <!-- Create bottom dip in the section -->
+                <div class="dip-bottom header-dip"></div>
         <!-- Header Container ends -->
         </div>
 
-        <!-- Create bottom dip in the section -->
-        <div class="dip-bottom header-dip"></div>
 
     <!-- HEADER ENDS -->
     </header>
@@ -87,49 +94,198 @@
 
         <!-- ABOUT SECTION STARTS -->
         <section class="about-section" id="about">
-            <!-- WRAPPER STARTS -->
-            <div class="wrapper">
+            <!-- About Container starts -->
+            <div class="about-container">
+                <!-- WRAPPER STARTS -->
+                <div class="wrapper">
 
-                <!-- About Container starts -->
-                <div class="about-container" data-aos="zoom-in">
-                    <!-- SVG Container -->
-                    <div id="svg-container" class="svg-container">
-                    
-                        <svg fill="#05386B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                            x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" preserveAspectRatio="xMidYMin">
-                            <path class="path" fill="#FFFFFF" stroke="#05386B" stroke-width="0.5" stroke-miterlimit="10"
-                               d="M26.47,39.76c2.17-1.21,2.77-2.58,2.85-3.61h.18a1.5,1.5,0,1,0,0-3h-.69a13.57,13.57,0,0,0-3.07-4.09,9.06,9.06,0,0,0-2.74-2,3.94,3.94,0,0,0,1.1-2.74,4,4,0,0,0-3.18-3.91V16a1.5,1.5,0,0,0-1.5-1.5H17V1.5a1.5,1.5,0,0,0-3,0v13H11.58a1.5,1.5,0,0,0-1.5,1.5v4.42A4,4,0,0,0,6.9,24.33,3.94,3.94,0,0,0,8,27.07a9.06,9.06,0,0,0-2.74,2,13.57,13.57,0,0,0-3.07,4.09H1.5a1.5,1.5,0,0,0,0,3h.18c.09,1,.68,2.4,2.85,3.61a5.86,5.86,0,0,0,2.73,1.13l.14,0a4,4,0,0,0,2.08,5.63A153.68,153.68,0,0,1,7.22,70.35a148.46,148.46,0,0,1-6.29,24,1.49,1.49,0,0,0,.91,1.91,1.43,1.43,0,0,0,.5.09,1.49,1.49,0,0,0,1.41-1,152.09,152.09,0,0,0,6.43-24.52,158.07,158.07,0,0,0,2.29-24h6.06a156.8,156.8,0,0,0,2.29,24,151.81,151.81,0,0,0,6.43,24.52,1.5,1.5,0,0,0,1.41,1,1.43,1.43,0,0,0,.5-.09,1.51,1.51,0,0,0,.92-1.91,148.21,148.21,0,0,1-6.3-24,153.68,153.68,0,0,1-2.26-23.79,4,4,0,0,0,2.08-5.63l.14,0A5.81,5.81,0,0,0,26.47,39.76ZM13.08,17.5h4.84v1.83H13.08ZM10.9,23.33h9.2a1,1,0,0,1,0,2H10.9a1,1,0,1,1,0-2ZM7.38,31.19l.09-.1c1.2-1.37,3.79-2.35,6.85-2.58.38,0,.76,0,1.08,0h.12c.4,0,.78,0,1.15,0h.1c3,.22,5.56,1.2,6.76,2.57l.09.1a13.59,13.59,0,0,1,1.73,2H5.65A13.59,13.59,0,0,1,7.38,31.19Zm-.83,6.36h0l-.18-.21-.24-.12a3.46,3.46,0,0,1-1.34-1.07H26.23a3.6,3.6,0,0,1-1.36,1.06l-.21.1-.18.21a3.78,3.78,0,0,1-1.39.44l-.16,0-.31.09-.3.07-.52.14-.74.17-1.18.21-.65.09-.68.06h-6.1l-.68-.07-.64-.08-1.2-.21-.72-.17-.53-.14-.3-.07L8.07,38l-.16,0A4.39,4.39,0,0,1,6.55,37.55ZM20.1,43.83H10.9a1,1,0,1,1,0-2h1.4l.72.08.48,0c.62,0,1.25.07,2,.07h.13c.65,0,1.28,0,1.9-.07l.48,0,.72-.08h1.4a1,1,0,0,1,0,2Z"/>
-                            </path>
-                        </svg>
-                    
+                    <!-- About Container starts -->
+                    <div class="about-flex-container">
+                        <!-- SVG Container -->
+                        <div class="svg-container">
+                        
+                            <svg fill="#05386B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                x="0px" y="0px" viewBox="0 0 70 100" enable-background="new 0 0 70 100" xml:space="preserve" preserveAspectRatio="xMidYMin">
+                                <path class="path tower-path" fill="#FFFFFF" stroke="#05386B" stroke-width="0.5" stroke-miterlimit="10"
+                                   d="M26.47,39.76c2.17-1.21,2.77-2.58,2.85-3.61h.18a1.5,1.5,0,1,0,0-3h-.69a13.57,13.57,0,0,0-3.07-4.09,9.06,9.06,0,0,0-2.74-2,3.94,3.94,0,0,0,1.1-2.74,4,4,0,0,0-3.18-3.91V16a1.5,1.5,0,0,0-1.5-1.5H17V1.5a1.5,1.5,0,0,0-3,0v13H11.58a1.5,1.5,0,0,0-1.5,1.5v4.42A4,4,0,0,0,6.9,24.33,3.94,3.94,0,0,0,8,27.07a9.06,9.06,0,0,0-2.74,2,13.57,13.57,0,0,0-3.07,4.09H1.5a1.5,1.5,0,0,0,0,3h.18c.09,1,.68,2.4,2.85,3.61a5.86,5.86,0,0,0,2.73,1.13l.14,0a4,4,0,0,0,2.08,5.63A153.68,153.68,0,0,1,7.22,70.35a148.46,148.46,0,0,1-6.29,24,1.49,1.49,0,0,0,.91,1.91,1.43,1.43,0,0,0,.5.09,1.49,1.49,0,0,0,1.41-1,152.09,152.09,0,0,0,6.43-24.52,158.07,158.07,0,0,0,2.29-24h6.06a156.8,156.8,0,0,0,2.29,24,151.81,151.81,0,0,0,6.43,24.52,1.5,1.5,0,0,0,1.41,1,1.43,1.43,0,0,0,.5-.09,1.51,1.51,0,0,0,.92-1.91,148.21,148.21,0,0,1-6.3-24,153.68,153.68,0,0,1-2.26-23.79,4,4,0,0,0,2.08-5.63l.14,0A5.81,5.81,0,0,0,26.47,39.76ZM13.08,17.5h4.84v1.83H13.08ZM10.9,23.33h9.2a1,1,0,0,1,0,2H10.9a1,1,0,1,1,0-2ZM7.38,31.19l.09-.1c1.2-1.37,3.79-2.35,6.85-2.58.38,0,.76,0,1.08,0h.12c.4,0,.78,0,1.15,0h.1c3,.22,5.56,1.2,6.76,2.57l.09.1a13.59,13.59,0,0,1,1.73,2H5.65A13.59,13.59,0,0,1,7.38,31.19Zm-.83,6.36h0l-.18-.21-.24-.12a3.46,3.46,0,0,1-1.34-1.07H26.23a3.6,3.6,0,0,1-1.36,1.06l-.21.1-.18.21a3.78,3.78,0,0,1-1.39.44l-.16,0-.31.09-.3.07-.52.14-.74.17-1.18.21-.65.09-.68.06h-6.1l-.68-.07-.64-.08-1.2-.21-.72-.17-.53-.14-.3-.07L8.07,38l-.16,0A4.39,4.39,0,0,1,6.55,37.55ZM20.1,43.83H10.9a1,1,0,1,1,0-2h1.4l.72.08.48,0c.62,0,1.25.07,2,.07h.13c.65,0,1.28,0,1.9-.07l.48,0,.72-.08h1.4a1,1,0,0,1,0,2Z"/>
+                                </path>
+                            </svg>
+                        
+                        </div>
+    
+                        <!-- About Content Container -->
+                        <div class="about-content-container" data-aos="zoom-in">
+                            <h2><span class="underline">About</span></h2>
+    
+                            <p>Hi! I’m Rafaela. I’m a Front-End Developer based in Toronto, and I create sleek, user-friendly websites and applications.</p>
+                            <p>Coming from both an arts and client-advising background, I work effectively on a team, have experience in project management and am adept at collaborating with clients to meet their needs, while serving the best interests of a
+                            project.</p>
+                            <p>With my keen eye for details and design, I can rock a PSD conversion down to the pixel. I write clean, modular code. My hunger to build and understand how things work has lead to a love for Javascript, JQuery and React.js.</p>
+                            <p>When I’m not coding, you can find me cooking, playing with dogs (that unfortunately aren’t mine), and checking out live theatre.</p>
+                            <p>For more on my journey to a career as a Front End Developer, please checkout my Medium article, <a href="https://medium.com/@rafaelalewis/the-art-of-coding-e517fc703475" target="_blank">The Art of Coding</a>.</p>
+                        </div>
+                    <!-- About Container ends -->
                     </div>
-
-                    <!-- About Content Container -->
-                    <div class="about-content-container">
-                        <h2> <span class="underline">About</span></h2>
-                    </div>
-                
-                <!-- About Container ends -->
+    
+                <!-- WRAPPER ENDS -->
                 </div>
-
-            <!-- WRAPPER ENDS -->
+                <!-- Create bottom dip in the section -->
+                <div class="dip-bottom about-dip"></div>
+            <!-- About Container ends -->
             </div>
+
 
         <!-- ABOUT SECTION ENDS -->
         </section>
+        
+
+        <!-- SKILS SECTION STARTS -->
+        <section class="skills-section">
+                
+            <!-- Skills Container Starts -->
+            <div class="skills-container" >
+                <!-- Wrapper starts -->
+                <div class="wrapper">
+
+                    <!-- Skills Intro Container starts -->
+                    <div class="skills-intro-container" id="skills">
+
+                        <!-- SVG Container -->
+                        <div class="svg-container">
+                            <svg fill="#05386B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                x="0px" y="0px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+                                <path class="path screen-path" fill="#F3F3F3" stroke="#05386B" stroke-width="0.8" stroke-miterlimit="10"
+                                    d="M92.335,11.792H7.665C6.193,11.792,5,12.986,5,14.458v71.084c0,1.472,1.193,2.666,2.665,2.666h84.67  c1.472,0,2.665-1.194,2.665-2.666V14.458C95,12.986,93.807,11.792,92.335,11.792z M35.756,17.15c1.854,0,3.361,1.504,3.361,3.36  c0,1.856-1.508,3.36-3.361,3.36s-3.359-1.504-3.359-3.36C32.396,18.654,33.902,17.15,35.756,17.15z M25.118,17.15  c1.853,0,3.361,1.504,3.361,3.36c0,1.856-1.508,3.36-3.361,3.36s-3.36-1.504-3.36-3.36C21.757,18.654,23.265,17.15,25.118,17.15z   M14.478,17.15c1.855,0,3.359,1.504,3.359,3.36c0,1.856-1.504,3.36-3.359,3.36c-1.853,0-3.36-1.504-3.36-3.36  C11.117,18.654,12.625,17.15,14.478,17.15z M89.668,82.876H10.332V29.229h79.336V82.876z">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <!-- Skills Intro Content Container -->
+                        <div class="skills-intro-content-container" data-aos="zoom-in">
+                            <h2><span class="underline">Skills</span></h2>
+                            <ul class="skills-list">
+                                <li class="skills-item">
+                                        <i class="fab fa-html5 skills-icon"></i>
+                                        HTML5
+                                </li>
+                                <li class="skills-item">
+                                        <i class="fab fa-css3-alt skills-icon"></i>
+                                        CSS3
+                                </li>
+                                <li class="skills-item">
+                                        <i class="fab fa-sass skills-icon"></i>
+                                        Sass
+                                </li>
+                                <li class="skills-item">
+                                        <i class="fab fa-js skills-icon"></i>
+                                        JavaScript
+                                </li>
+                                <li class="skills-item">
+                                    <i class="devicon-jquery-plain skills-icon"></i>
+                                    JQuery
+                                </li>
+                                <li class="skills-item">
+                                    <i class="fab fa-react skills-icon"></i>
+                                    React
+                                </li>
+                                <li class="skills-item">
+                                    <i class="fab fa-git-square skills-icon"></i>
+                                    Git
+                                </li>
+                                <li class="skills-item">
+                                    <i class="fas fa-terminal skills-icon"></i>
+                                    Terminal
+                                </li>
+                                <li class="skills-item">
+                                    <i class="far fa-window-maximize skills-icon"></i>
+                                    RWD
+                                </li>
+                                <li class="skills-item">
+                                    <a href="" class="skills-anchor"></a>
+                                </li>
+                                <li class="skills-item">
+                                    <a href="" class="skills-anchor"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    <!-- Skills Intro Container ends -->
+                    </div>
+    
+                <!-- Wrapper ends -->
+                </div>
+
+                <!-- Create bottom dip in the section -->
+                <div class="dip-bottom skills-dip"></div>
+            <!-- Skills Container ends -->
+            </div>
+
+        <!-- SKILLS SECTION ENDS -->
+        </section>
+
+        <!-- WORK SECTION STARTS -->
+        <section class="work-section" id="work">
+            <!-- Work Container starts -->
+            <div class="work-container" data-aos="zoom-in">
+                <!-- Wrapper starts -->
+                <div class="wrapper">
+
+                    <h2 class="work-heading"><span class="underline">Work</span></h2>
+
+                    <!-- Work Display Container starts -->
+                    <div class="work-display-container">
+
+                        <!-- Display Flex Container starts -->
+                        <div class="display-flex-container">
+
+                            <!-- Project Info -->
+                            <div class="project-info">
+    
+                            </div>
+    
+                            <!-- Macbook display -->
+                            <div class="macbook-display">
+                                <img src="assets/macbook-display.png" alt="A photo of a Mackbook Air, displaying Rafaela's project" class="macbook-image">
+                            </div>
+    
+                            <!-- View online -->
+                            <div class="view-online">
+    
+                            </div>
+                        
+                        <!-- Display Flex Container ends -->
+                        </div>
+
+                        <div class="display-navigation">
+                            <!-- Back -->
+                            <!-- <button class="display-nav-button">
+                                <i class="fas fa-angle-left display-nav-icon"></i>
+                            </button> -->
+
+                            <!-- Forward -->
+                            <!-- <button class="display-nav-button">
+                                <i class="fas fa-angle-right display-nav-icon"></i>
+                            </button> -->
+                        </div>
+
+                    <!-- Work Display Container ends -->
+                    </div>
+    
+
+                <!-- Wrapper ends -->
+                </div>
+                <!-- Create bottom dip in the section -->
+                <div class="dip-bottom work-dip"></div>
+
+            <!-- Work Container ends -->
+            </div>
 
 
-        <!-- PORTFOLIO SECTION SVG -->
-        <!-- <div id="svg-container" class="svg-container">
+        <!-- WORK SECTION ENDS -->
+        </section>
+
+
         
-            <svg fill="#05386B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                <path class="path" fill="#FFFFFF" stroke="#05386B" stroke-width="0.5" stroke-miterlimit="10"
-                    d="M92.335,11.792H7.665C6.193,11.792,5,12.986,5,14.458v71.084c0,1.472,1.193,2.666,2.665,2.666h84.67  c1.472,0,2.665-1.194,2.665-2.666V14.458C95,12.986,93.807,11.792,92.335,11.792z M35.756,17.15c1.854,0,3.361,1.504,3.361,3.36  c0,1.856-1.508,3.36-3.361,3.36s-3.359-1.504-3.359-3.36C32.396,18.654,33.902,17.15,35.756,17.15z M25.118,17.15  c1.853,0,3.361,1.504,3.361,3.36c0,1.856-1.508,3.36-3.361,3.36s-3.36-1.504-3.36-3.36C21.757,18.654,23.265,17.15,25.118,17.15z   M14.478,17.15c1.855,0,3.359,1.504,3.359,3.36c0,1.856-1.504,3.36-3.359,3.36c-1.853,0-3.36-1.504-3.36-3.36  C11.117,18.654,12.625,17.15,14.478,17.15z M89.668,82.876H10.332V29.229h79.336V82.876z">
-                </path>
-            </svg>
-        
-        </div> -->
 
         <!-- CONTACT SECTION SVG -->
         <!-- <div id="svg-container" class="svg-container">

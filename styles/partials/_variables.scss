@@ -11,9 +11,12 @@ $black: 900;
 // Colors
 $background-darker: rgb(243,243,243);
 $background-lighter: rgb(255,255,255);
-$text: rgb(54, 53, 55);
+$nav-background: rgba(243,243,243,0.8);
 $accent-light: rgb(92, 219, 149);
 $accent-dark: rgb(5, 56, 107);
+// $portfolio-display-background: darken($accent-light, 2%);
+$portfolio-display-background: rgba(92, 219, 149, 0.8);
 
 // Padding
-$dip-padding: 30vh;
+$dip-bottom-padding: 30vh;
+$dip-top-padding: 10vh;

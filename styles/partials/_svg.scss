@@ -1,0 +1,30 @@
+// Flex styles
+.svg-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+// SVG Animation
+.path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 5s ease-in-out alternate 2s infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+// SVG placement
+.tower-path {
+    transform: translate(20%, 2%)
+}
+
+.screen-path {
+  transform: translate(2%, 9%);
+}
