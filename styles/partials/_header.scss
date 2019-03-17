@@ -13,6 +13,14 @@
     width: 100%;
     align-items: center;
 
+    @include tablet {
+        padding-top: 80px;
+    }
+
+    @include mobile {
+        padding-bottom: 40px;
+    }
+
     .logo-content-container {
         width: 100%;
         text-align: center
@@ -21,6 +29,11 @@
     .headshot-container {
         width: 400px;
         height: 400px;
+
+        @include mobile {
+            width: 300px;
+            height: 300px;
+        }
         
         .dev-headshot {
             border-radius: 50%;

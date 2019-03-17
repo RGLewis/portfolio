@@ -28,13 +28,17 @@ h1, h2, h3, h4 {
 .wrapper {
 	max-width: 1600px;
 	width: 90%;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .nav-wrapper {
     max-width: 1600px;
 	width: 95%;
-	margin: 0 auto;
+    margin: 0 auto;
+    
+    @include tablet {
+        width: 100%;
+    }
 }
 
 /* Font and Background Styles */
@@ -52,6 +56,10 @@ h1 {
     font-family: $accent-font;
     font-size: 4rem;
     color: $accent-dark;
+
+    @include mobile {
+        font-size: 2.5rem;
+    }
 }
 
 h2 {
@@ -66,6 +74,15 @@ h3 {
     font-size: 2rem;
     font-weight: $medium;
     color: $accent-dark;
+
+    @include tablet {
+        font-size: 1.7rem;
+    }
+
+    @include mobile {
+        margin-top: 10px;
+        font-size: 1.6rem;
+    }
 }
 
 h4 {
@@ -78,6 +95,10 @@ p {
     font-size: 1.3rem;
     letter-spacing: 1px;
     font-weight: $regular;
+
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 
 // Additonal class styles
@@ -139,6 +160,9 @@ p {
         }
     }
 
+    @include mobile {
+       display: none;
+    }
 }
 
 .underline {

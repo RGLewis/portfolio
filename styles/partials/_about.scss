@@ -5,6 +5,10 @@
     @include tablet {
         padding-top: 15vh;
     }
+
+    @include mobile {
+        padding-top: 10vh;
+    }
 }
 
 .about-container {
