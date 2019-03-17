@@ -13,6 +13,8 @@ $(function(){
     $(".menu-button").on("click", function () {
         $(".nav-container").toggleClass("show-nav-container");
         $(".nav-list").toggleClass("show-nav-list");
+        $(".bar2").toggleClass("hide-bar2");
+        $(".menu-bar").toggleClass("open");
     });
 
     // Carousel - adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp
