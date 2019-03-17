@@ -1,6 +1,10 @@
 .work-section {
-    padding-top: $dip-bottom-padding;
+    padding-top: 20vh;
     background: $background-lighter;
+}
+
+.work-container {
+    position: relative;
 }
 
 .work-display-container {
@@ -15,9 +19,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-
-  -webkit-animation-name: fade 800ms;
-  animation: fade 800ms;
+    -webkit-animation-name: fade 800ms;
+    animation: fade 800ms;
 }
 
 // Additional class styles
@@ -28,6 +31,7 @@
 
 .macbook-display {
     margin: 30px auto 0 auto;
+    width: 50%;
 }
 
 // Skills dip

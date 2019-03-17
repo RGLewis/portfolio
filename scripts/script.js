@@ -4,6 +4,11 @@ AOS.init({
 })
 
 $(function(){
+    // Smooth scroll
+    $('a').smoothScroll({
+        speed: 500
+    })
+
     // Handle Show Nav
     $(".menu-button").on("click", function () {
         $(".nav-container").toggleClass("show-nav-container");

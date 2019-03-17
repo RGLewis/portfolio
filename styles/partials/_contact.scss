@@ -1,0 +1,131 @@
+// Padding, flex, width and background styles
+.contact-section {
+    padding-top: $dip-bottom-padding;
+    padding-bottom: 40px;
+    background: $background-darker;
+}
+
+.contact-container {
+    width: 100%;
+    position: relative;
+}
+
+.contact-flex-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+}
+
+.contact-content-container {
+    width: 60%;
+}
+
+// Form styles
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-input {
+    border: 4px solid transparent;
+    border-bottom: 4px solid $accent-light;
+
+    &:focus, &:active {
+        border-color: $accent-light;
+        background: $background-lighter;
+    }
+}
+
+.form-input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    background: transparent;
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $accent-dark;
+    font-weight: $medium;
+    letter-spacing: 1px;
+    
+    &:focus, &:active {
+        background: $background-lighter;
+    }
+
+}
+
+textarea {
+    border: 4px solid $accent-light;
+    resize: none;
+}
+
+// Placeholder 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $accent-dark;
+    font-weight: $medium;
+    opacity: 0.8;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $accent-dark;
+    font-weight: $medium;
+    opacity: 0.8;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $accent-dark;
+    font-weight: $medium;
+    opacity: 0.8;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $accent-dark;
+    font-weight: $medium;
+    opacity: 0.8;
+}
+
+.submit-button-container {
+    width: 70%;
+    margin: 10px auto;
+
+    .form-submit-button {
+        width: 100%;
+        color: $accent-dark;
+        font-family: $body-font;
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+        font-weight: $black;
+        padding: 20px;
+        text-transform: uppercase;
+        background: $background-darker;
+        border: 4px solid $accent-dark;
+        transition: background 500ms, border 500ms border-radius 300ms;
+    
+        &:hover {
+            color: $background-darker;
+            background: $accent-dark;
+            border-color: $accent-light;
+        }
+    
+        &:focus, &:active {
+            color: $background-darker;
+            background: $accent-dark;
+            border-color: $accent-light;
+            border-radius: 40px;
+        }
+        
+    }
+}
+
+
+// Additional class styles
+.contact-heading {
+    margin-bottom: 20px;
+}
