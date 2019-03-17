@@ -19,25 +19,6 @@
     width: 60%;
 }
 
-// Additional class styles
-.link {
-    text-decoration: none;
-    color: $accent-dark;
-    font-weight: $medium;
-    padding: 0 5px;
-    border: 1px solid transparent;
-    
-
-    &:hover {
-        border-bottom: 1px solid $accent-light;
-    }
-
-    &:active, &:focus {
-        border: 1px solid $accent-light;
-    }
-}
-
-
 // Section dip
 .about-dip {
     background: $background-lighter;

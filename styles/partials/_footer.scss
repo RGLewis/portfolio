@@ -1,0 +1,26 @@
+footer {
+    background: $background-darker;
+    padding: 40px 0;
+    border-top: 2px solid $accent-light;
+}
+
+.footer-nav-list {
+    width: 80%;
+    margin: 0 auto;
+    // background: tomato;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .footer-nav-anchor {
+        font-size: 4rem;
+        color: $accent-dark;
+        padding: 20px;
+    }
+}
+
+.footer-copyright {
+    text-align: center;
+    font-weight: $medium;
+    letter-spacing: 3px;
+}
