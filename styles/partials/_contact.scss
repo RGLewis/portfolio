@@ -3,6 +3,10 @@
     padding-top: $dip-bottom-padding;
     padding-bottom: 80px;
     background: $background-darker;
+
+    @include tablet {
+        padding-top: 8vh;
+    }
 }
 
 .contact-container {
@@ -17,16 +21,29 @@
     width: 100%;
     min-height: 10vh;
     align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .contact-content-container {
     width: 60%;
+
+    @include tablet {
+        width: 100%;
+        padding: 40px 0;
+    }
 }
 
 // Form styles
 form {
     width: 80%;
     margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .form-input {
@@ -49,6 +66,10 @@ form {
     color: $accent-dark;
     font-weight: $medium;
     letter-spacing: 1px;
+
+    @include tablet {
+        margin: 20px 0;
+    }
     
     &:focus, &:active {
         background: $background-lighter;

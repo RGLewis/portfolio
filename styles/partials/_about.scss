@@ -1,6 +1,10 @@
 .about-section {
     padding-top: $dip-bottom-padding;
     background: $background-lighter;
+
+    @include tablet {
+        padding-top: 15vh;
+    }
 }
 
 .about-container {
@@ -13,10 +17,19 @@
     width: 100%;
     min-height: 10vh;
     align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .about-content-container {
     width: 60%;
+
+    @include tablet {
+        width: 100%;
+        padding: 20px 0 50px 0;
+    }
 }
 
 // Section dip

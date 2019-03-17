@@ -55,7 +55,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: $black;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -109,6 +109,10 @@ p {
     -webkit-clip-path: polygon(68% 36%, 0 0, 100% 0);
     clip-path: polygon(68% 36%, 0 0, 100% 0);
     z-index: 30;
+
+    @include tablet {
+        height: 20vh;
+    }
 }
 
 .down-icon-container {

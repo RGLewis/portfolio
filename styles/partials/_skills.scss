@@ -1,7 +1,10 @@
 .skills-section {
-    position: relative;
     padding-top: $dip-bottom-padding;
     background: $background-darker;
+
+    @include tablet {
+        padding-top: 8vh;
+    }
 }
 
 .skills-container {
@@ -16,10 +19,19 @@
     width: 100%;
     min-height: 10vh;
     align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .skills-intro-content-container {
     width: 50%;
+
+    @include tablet {
+        width: 100%;
+        padding: 20px 0 50px 0;
+    }
 }
 
 .skills-list {

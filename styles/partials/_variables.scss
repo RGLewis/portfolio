@@ -14,9 +14,37 @@ $background-lighter: rgb(255,255,255);
 $nav-background: rgba(243,243,243,0.8);
 $accent-light: rgb(92, 219, 149);
 $accent-dark: rgb(5, 56, 107);
-// $portfolio-display-background: darken($accent-light, 2%);
 $portfolio-display-background: rgba(92, 219, 149, 0.8);
 
 // Padding
 $dip-bottom-padding: 30vh;
 $dip-top-padding: 10vh;
+
+// MEDIA QUERIES
+$final-width: 375px;
+$mobile-width: 600px;
+$tablet-width: 900px;
+$desktop-width: 1200px;
+
+@mixin final {
+    @media (max-width: #{$final-width}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktop-width}) {
+        @content;
+    }
+}

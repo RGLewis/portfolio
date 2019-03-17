@@ -16,6 +16,10 @@ footer {
         color: $accent-dark;
         padding: 20px;
 
+        @include tablet {
+            font-size: 3rem;
+        }
+
         .footer-nav-icon {
             transition: all 300ms;
 

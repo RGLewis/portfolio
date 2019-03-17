@@ -20,13 +20,25 @@
   }
 }
 
+// svg {
+//   background: tomato;
+// }
+
 // SVG placement
 .tower-path {
-    transform: translate(20%, 2%)
+    transform: translate(20%, 2%);
+    
+    @include tablet {
+      transform: translate(27%, 2%)
+    }
 }
 
 .screen-path {
   transform: translate(2%, 9%);
+
+  @include tablet {
+    transform: translate(8%, 9%)
+  }
 }
 
 .phone-path {
