@@ -1,13 +1,8 @@
 /* Default styles */
-a:focus, a:active{
-    border: 1px solid transparent;
-}
-
 img {
     width: 100%;
     height: 100%;
     display: block;
-    max-height: 400px;
 }
 
 ul {
@@ -18,6 +13,10 @@ ul {
 
 a {
     text-decoration: none;
+
+    &:focus, &:active {
+        outline: none;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -113,7 +112,7 @@ p {
     }
 }
 
-// Additonal class styles
+// Additional class styles
 .link {
     text-decoration: none;
     color: $accent-dark;
@@ -121,7 +120,6 @@ p {
     padding: 0 5px;
     border: 1px solid transparent;
     
-
     &:hover {
         border-bottom: 1px solid $accent-light;
     }
@@ -131,7 +129,7 @@ p {
     }
 }
 
-// Top and bottom color dips
+// Bottom color dips
 .dip-bottom {
     display: block;
     position: absolute;
@@ -145,35 +143,6 @@ p {
 
     @include tablet {
         height: 20vh;
-    }
-}
-
-.down-icon-container {
-    padding: 20px 0;
-
-    .down {
-        padding: 10px 15px;
-        display: block;
-        border-radius: 50%;
-        border: 2px solid transparent;
-
-        &:focus, &:active {
-            border: 2px solid $accent-dark; 
-        }
-
-        .down-icon {
-            font-size: 2rem;
-            color: $accent-light;
-            transition: all 300ms;
-    
-           &:hover {
-                transform: scale(1.3);
-            }
-        }
-    }
-
-    @include mobile {
-       display: none;
     }
 }
 

@@ -1,4 +1,4 @@
-// Header shape and background styles
+// Header width and background styles
 .header-container {
     width: 100%;
     position: relative;
@@ -44,6 +44,36 @@
             border-radius: 50%;
             border: 7px solid $accent-light;
         }
+    }
+}
+
+// ADDITIONAL CLASS STYLES
+.down-icon-container {
+    padding: 20px 0;
+
+    .down {
+        padding: 10px 15px;
+        display: block;
+        border-radius: 50%;
+        border: 2px solid transparent;
+
+        &:focus, &:active {
+            border: 2px solid $accent-dark; 
+        }
+
+        .down-icon {
+            font-size: 2rem;
+            color: $accent-light;
+            transition: all 300ms;
+    
+           &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    @include mobile {
+       display: none;
     }
 }
 

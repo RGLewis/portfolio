@@ -1,4 +1,22 @@
+// Skip Link
+.skip-link {
+    position: absolute;
+    right: -1000px;
+    top: 5%;
+    z-index: 999;
+    background: $nav-background;
+    border: 2px solid $accent-dark;
+    color: $accent-light;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    right: 5%;
+    border: 2px solid $accent-dark;
+}
+
 // Menu styles
+// Hamburger menu
 .nav-button-container {
 
     @include tablet {
@@ -7,7 +25,6 @@
         top: 2%;
         left: 2%;
     }
-    
 }
 
 .hamburger-menu {
@@ -48,7 +65,7 @@
     }
 }
 
-
+// Nav Container and list
 .nav-container {
     padding: 20px 0 10px 0;
     width: 100%;
@@ -108,6 +125,7 @@
     }
 }
 
+// Toggle class styles
 .show-nav-list {
     left: 10%;
     @include tablet {

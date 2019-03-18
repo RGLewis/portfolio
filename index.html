@@ -24,6 +24,10 @@
             <nav class="nav-container">
                 <!-- Wrapper stars -->
                 <div class="nav-wrapper">
+
+                    <!-- Skip Link -->
+                    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
                     <!-- Nav button -->
                     <div class="nav-button-container">
                         <button type="button" class="hamburger-menu menu-button">
@@ -72,8 +76,8 @@
 
                     <!-- Down icon -->
                     <div class="down-icon-container">
-                        <a href="#about" class="down-anchor down icon-dark-background">
-                            <i class="fas fa-chevron-down down-icon"></i>
+                        <a href="#about" class="down-anchor down icon-dark-background" aria-label="Navigate to the Main content.">
+                            <i class="fas fa-chevron-down down-icon" aria-hidden="true"></i>
                         </a>
                     </div>
                     
@@ -82,17 +86,16 @@
             <!-- Wrapper ends -->
             </div>
 
-                <!-- Create bottom dip in the section -->
-                <div class="dip-bottom header-dip"></div>
+            <!-- Create bottom dip in the section -->
+            <div class="dip-bottom header-dip"></div>
         <!-- Header Container ends -->
         </div>
-
 
     <!-- HEADER ENDS -->
     </header>
 
     <!-- MAIN STARTS -->
-    <main>
+    <main id="main-content">
 
         <!-- ABOUT SECTION STARTS -->
         <section class="about-section" id="about">
@@ -112,13 +115,14 @@
                                    d="M26.47,39.76c2.17-1.21,2.77-2.58,2.85-3.61h.18a1.5,1.5,0,1,0,0-3h-.69a13.57,13.57,0,0,0-3.07-4.09,9.06,9.06,0,0,0-2.74-2,3.94,3.94,0,0,0,1.1-2.74,4,4,0,0,0-3.18-3.91V16a1.5,1.5,0,0,0-1.5-1.5H17V1.5a1.5,1.5,0,0,0-3,0v13H11.58a1.5,1.5,0,0,0-1.5,1.5v4.42A4,4,0,0,0,6.9,24.33,3.94,3.94,0,0,0,8,27.07a9.06,9.06,0,0,0-2.74,2,13.57,13.57,0,0,0-3.07,4.09H1.5a1.5,1.5,0,0,0,0,3h.18c.09,1,.68,2.4,2.85,3.61a5.86,5.86,0,0,0,2.73,1.13l.14,0a4,4,0,0,0,2.08,5.63A153.68,153.68,0,0,1,7.22,70.35a148.46,148.46,0,0,1-6.29,24,1.49,1.49,0,0,0,.91,1.91,1.43,1.43,0,0,0,.5.09,1.49,1.49,0,0,0,1.41-1,152.09,152.09,0,0,0,6.43-24.52,158.07,158.07,0,0,0,2.29-24h6.06a156.8,156.8,0,0,0,2.29,24,151.81,151.81,0,0,0,6.43,24.52,1.5,1.5,0,0,0,1.41,1,1.43,1.43,0,0,0,.5-.09,1.51,1.51,0,0,0,.92-1.91,148.21,148.21,0,0,1-6.3-24,153.68,153.68,0,0,1-2.26-23.79,4,4,0,0,0,2.08-5.63l.14,0A5.81,5.81,0,0,0,26.47,39.76ZM13.08,17.5h4.84v1.83H13.08ZM10.9,23.33h9.2a1,1,0,0,1,0,2H10.9a1,1,0,1,1,0-2ZM7.38,31.19l.09-.1c1.2-1.37,3.79-2.35,6.85-2.58.38,0,.76,0,1.08,0h.12c.4,0,.78,0,1.15,0h.1c3,.22,5.56,1.2,6.76,2.57l.09.1a13.59,13.59,0,0,1,1.73,2H5.65A13.59,13.59,0,0,1,7.38,31.19Zm-.83,6.36h0l-.18-.21-.24-.12a3.46,3.46,0,0,1-1.34-1.07H26.23a3.6,3.6,0,0,1-1.36,1.06l-.21.1-.18.21a3.78,3.78,0,0,1-1.39.44l-.16,0-.31.09-.3.07-.52.14-.74.17-1.18.21-.65.09-.68.06h-6.1l-.68-.07-.64-.08-1.2-.21-.72-.17-.53-.14-.3-.07L8.07,38l-.16,0A4.39,4.39,0,0,1,6.55,37.55ZM20.1,43.83H10.9a1,1,0,1,1,0-2h1.4l.72.08.48,0c.62,0,1.25.07,2,.07h.13c.65,0,1.28,0,1.9-.07l.48,0,.72-.08h1.4a1,1,0,0,1,0,2Z"/>
                                 </path>
                             </svg>
-                        
                         </div>
     
                         <!-- About Content Container -->
                         <div class="about-content-container" data-aos="zoom-in">
+                            <!-- Section title -->
                             <h2><span class="underline">About</span></h2>
-    
+                            
+                            <!-- Written content -->
                             <p>Hi! I’m Rafaela. I’m a Front-End Developer based in Toronto, and I create sleek, user-friendly websites and applications.</p>
                             <p>Coming from both an arts and client-advising background, I work effectively on a team, have experience in project management and am adept at collaborating with clients to meet their needs, while serving the best interests of a
                             project.</p>
@@ -131,11 +135,12 @@
     
                 <!-- WRAPPER ENDS -->
                 </div>
+
                 <!-- Create bottom dip in the section -->
                 <div class="dip-bottom about-dip"></div>
+
             <!-- About Container ends -->
             </div>
-
 
         <!-- ABOUT SECTION ENDS -->
         </section>
@@ -164,7 +169,10 @@
 
                         <!-- Skills Intro Content Container -->
                         <div class="skills-intro-content-container" data-aos="zoom-in">
+                            <!-- Section title -->
                             <h2><span class="underline">Skills</span></h2>
+
+                            <!-- Skills List -->
                             <ul class="skills-list">
                                 <li class="skills-item">
                                         <i class="fab fa-html5 skills-icon"></i>
@@ -232,6 +240,7 @@
                 <!-- Wrapper starts -->
                 <div class="wrapper">
 
+                    <!-- Section title -->
                     <h2 class="work-heading"><span class="underline">Work</span></h2>
 
                     <!-- Work Display Container starts -->
@@ -244,8 +253,7 @@
                             <div class="project-info">
                                 <h4> <span class="underline-portfolio-header">Excuse Muse</span></h4>
                                 <p class="project-skills-para">JavaScript, JQuery, HTML5, CSS3/Sass, Responsive Design</p>
-                                <p class=project-description>A quiz-based get out of work excuse generator.</p>
-                                
+                                <p class=project-description>A quiz-based get out of work excuse generator.</p>    
                             </div>
     
                             <!-- Macbook display -->
@@ -270,7 +278,6 @@
                                 <h4> <span class="underline-portfolio-header">Perfect Day</span></h4>
                                 <p class="project-skills-para">React, API, HTML5, CSS3/Sass, Responsive Design</p>
                                 <p class=project-description>Finds users the top restaurants and nearby activities in their area.</p>
-                        
                             </div>
                         
                             <!-- Macbook display -->
@@ -285,7 +292,7 @@
                                 <a href="#" class="view-online-link" target="_blank">Live</a>
                             </div>
                         
-                            <!-- Display Flex Container for Perfect Day ends -->
+                        <!-- Display Flex Container for Perfect Day ends -->
                         </div>
 
                         <!-- Display Flex Container starts for Mutt Match -->
@@ -310,7 +317,7 @@
                                 <a href="#" class="view-online-link" target="_blank">Live</a>
                             </div>
                         
-                            <!-- Display Flex Container for Mutt Match ends -->
+                        <!-- Display Flex Container for Mutt Match ends -->
                         </div>
 
                         <!-- Display Flex Container starts for Beachstay -->
@@ -346,7 +353,6 @@
                                 <h4> <span class="underline-portfolio-header">Parent Joke</span></h4>
                                 <p class="project-skills-para">React, API, Firebase, HTML5, CSS3/Sass, Group Programming, Responsive Design</p>
                                 <p class=project-description>Allows users to get, submit and vote on jokes.</p>
-                        
                             </div>
                         
                             <!-- Macbook display -->
@@ -361,19 +367,19 @@
                                 <a href="#" class="view-online-link" target="_blank">Live</a>
                             </div>
                         
-                            <!-- Display Flex Container for Perfect Day ends -->
+                        <!-- Display Flex Container for Perfect Day ends -->
                         </div>
 
                         <!-- Navigation -->
                         <div class="display-navigation">
                             <!-- Back -->
-                            <button type="button" class="display-nav-button back-button">
-                                <i class="fas fa-angle-left display-nav-icon"></i>
+                            <button type="button" class="display-nav-button back-button" aria-label="Show previous project">
+                                <i class="fas fa-angle-left display-nav-icon" aria-hidden="true"></i>
                             </button>
 
                             <!-- Forward -->
-                            <button type="button" class="display-nav-button forwards-button">
-                                <i class="fas fa-angle-right display-nav-icon"></i>
+                            <button type="button" class="display-nav-button forwards-button" aria-label="Show next project">
+                                <i class="fas fa-angle-right display-nav-icon" aria-hidden="true"></i>
                             </button>
                         </div>
 
@@ -382,13 +388,12 @@
     
                 <!-- Wrapper ends -->
                 </div>
+
                 <!-- Create bottom dip in the section -->
                 <div class="dip-bottom work-dip"></div>
 
             <!-- Work Container ends -->
             </div>
-
-
         <!-- WORK SECTION ENDS -->
         </section>
 
@@ -416,6 +421,8 @@
         
                         <!-- Contact Content Container starts -->
                         <div class="contact-content-container" data-aos="zoom-in">
+
+                            <!-- Section title -->
                             <h2 class="contact-heading"><span class="underline">Contact</span></h2>
 
                             <!-- FORM STARTS -->
@@ -444,10 +451,10 @@
                         <!-- Contact Content Container ends  -->
                         </div>
         
-                        <!-- Contact Flex Container ends -->
+                    <!-- Contact Flex Container ends -->
                     </div>
         
-                    <!-- Wrapper ends -->
+                <!-- Wrapper ends -->
                 </div>
     
             <!-- Contact Container ends -->
@@ -472,29 +479,29 @@
                     <ul class="footer-nav-list">
                         <!-- LinkedIn -->
                         <li class="footer-nav-item">
-                            <a href="https://www.linkedin.com/in/rafaela-lewis/" class="footer-nav-anchor" target="_blank">
-                                <i class="fab fa-linkedin footer-nav-icon"></i>
+                            <a href="https://www.linkedin.com/in/rafaela-lewis/" class="footer-nav-anchor" target="_blank" aria-label="View my LinkedIn.">
+                                <i class="fab fa-linkedin footer-nav-icon" aria-hidden="true"></i>
                             </a>
                         </li>
                         
                         <!-- Medium -->
                         <li class="footer-nav-item">
-                            <a href="https://medium.com/@rafaelalewis" class="footer-nav-anchor" target="_blank">
-                                <i class="fab fa-medium footer-nav-icon"></i>
+                            <a href="https://medium.com/@rafaelalewis" class="footer-nav-anchor" target="_blank" aria-label="View my Medium.">
+                                <i class="fab fa-medium footer-nav-icon" aria-hidden="true"></i>
                             </a>
                         </li>
                         
                         <!-- Twitter -->
                         <li class="footer-nav-item">
-                            <a href="https://twitter.com/RafaelaCodes" class="footer-nav-anchor" target="_blank">
-                            <i class="fab fa-twitter-square footer-nav-icon"></i>
+                            <a href="https://twitter.com/RafaelaCodes" class="footer-nav-anchor" target="_blank" aria-label="View my Twitter.">
+                            <i class="fab fa-twitter-square footer-nav-icon" aria-hidden="true"></i>
                             </a>
                         </li>
                         
                         <!-- GitHub -->
                         <li class="footer-nav-item">
-                            <a href="https://github.com/RGLewis" class="footer-nav-anchor" target="_blank">
-                                <i class="fab fa-github-square footer-nav-icon"></i>
+                            <a href="https://github.com/RGLewis" class="footer-nav-anchor" target="_blank" aria-label="View my Github.">
+                                <i class="fab fa-github-square footer-nav-icon" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
