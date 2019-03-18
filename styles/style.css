@@ -659,6 +659,10 @@ p {
   -webkit-animation-name: fade 800ms;
   -webkit-animation: fade 800ms;
   animation: fade 800ms; }
+  @media (max-width: 1370px) {
+    .display-flex-container {
+      overflow: scroll;
+      height: 700px; } }
   @media (max-width: 900px) {
     .display-flex-container {
       overflow: scroll;

@@ -37,6 +37,11 @@
     -webkit-animation-name: fade 800ms;
     animation: fade 800ms;
 
+    @include carousel1 {
+        overflow: scroll;
+        height: 700px;
+    }
+
     @include tablet {
         overflow: scroll;
         height: 730px;
