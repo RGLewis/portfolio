@@ -223,15 +223,12 @@ h3 {
       display: none; } }
 
 h4 {
-  font-family: "Bungee Shade", cursive;
   font-size: 2.5rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-weight: 900; }
   @media (max-width: 900px) {
     h4 {
       font-size: 1.5rem; } }
-  @media (max-width: 375px) {
-    h4 {
-      font-size: 1.2rem; } }
 
 p {
   font-size: 1.3rem;
@@ -670,11 +667,7 @@ p {
   @media (max-width: 600px) {
     .display-flex-container {
       overflow: scroll;
-      height: 650px; } }
-  @media (max-width: 375px) {
-    .display-flex-container {
-      overflow: scroll;
-      height: 620px; } }
+      height: 580px; } }
 
 .work-heading {
   text-align: left;
@@ -690,9 +683,6 @@ p {
   @media (max-width: 900px) {
     .macbook-display {
       width: 80%; } }
-  @media (max-width: 900px) {
-    .macbook-display {
-      width: 100%; } }
 
 .underline-portfolio-header {
   padding: 0 10px 8px 0;

@@ -49,12 +49,7 @@
 
     @include mobile {
         overflow: scroll;
-        height: 650px;
-    }
-
-    @include final {
-        overflow: scroll;
-        height: 620px;
+        height: 580px;
     }  
 }
 
@@ -75,10 +70,6 @@
 
     @include tablet {
         width: 80%;
-    }
-
-    @include tablet {
-        width: 100%;
     }
 }
 
