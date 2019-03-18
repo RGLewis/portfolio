@@ -38,13 +38,6 @@ $desktop-width: 1200px;
         @content;
     }
 }
-
-@mixin carousel {
-    @media (max-width: #{$carousel-adjust}) {
-        @content;
-    }
-}
-
 @mixin tablet {
     @media (max-width: #{$tablet-width}) {
         @content;
