@@ -23,6 +23,7 @@ $dip-top-padding: 10vh;
 // MEDIA QUERIES
 $final-width: 375px;
 $mobile-width: 600px;
+$carousel-adjust: 750px;
 $tablet-width: 900px;
 $desktop-width: 1200px;
 
@@ -37,6 +38,13 @@ $desktop-width: 1200px;
         @content;
     }
 }
+
+@mixin carousel {
+    @media (max-width: #{$carousel-adjust}) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: #{$tablet-width}) {
         @content;

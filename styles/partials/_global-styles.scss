@@ -68,6 +68,10 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 6px;
     text-align: center;
+
+    @include tablet {
+        font-size: 2rem;
+    }
 }
 
 h3 {
@@ -83,12 +87,24 @@ h3 {
         margin-top: 10px;
         font-size: 1.6rem;
     }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 h4 {
     font-family: $accent-font;
     font-size: 2.5rem;
     letter-spacing: 2px;
+
+    @include tablet {
+        font-size: 1.5rem;
+    }
+
+    @include final {
+        font-size: 1.2rem;
+    }
 }
 
 p {

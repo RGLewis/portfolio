@@ -34,6 +34,11 @@
             width: 300px;
             height: 300px;
         }
+
+        @include final {
+            width: 250px;
+            height: 250px;
+        }
         
         .dev-headshot {
             border-radius: 50%;

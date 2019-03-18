@@ -5,7 +5,15 @@
     background: $background-darker;
 
     @include tablet {
-        padding-top: 8vh;
+        padding-top: 15vh;
+    }
+
+    @include mobile {
+        padding-top: 10vh;
+    }
+
+    @include final {
+        padding-bottom: 20px;
     }
 }
 

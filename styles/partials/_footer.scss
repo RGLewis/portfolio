@@ -14,10 +14,15 @@ footer {
     .footer-nav-anchor {
         font-size: 4rem;
         color: $accent-dark;
-        padding: 20px;
+        padding: 10px 20px;
+        display: block;
 
         @include tablet {
             font-size: 3rem;
+        }
+
+        @include final {
+            font-size: 2rem;
         }
 
         .footer-nav-icon {
