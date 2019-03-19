@@ -28,6 +28,10 @@
         padding: 20px;
         margin: 40px auto 60px auto;
     }
+
+    @include mobile {
+        padding: 20px 10px;
+    } 
 }
 
 // Flex and height styles
@@ -38,21 +42,6 @@
     -webkit-animation-name: fade 800ms;
     animation: fade 800ms;
     position: relative;
-
-    @include carousel1 {
-        overflow: scroll;
-        height: 700px;
-    }
-
-    @include tablet {
-        overflow: scroll;
-        height: 680px;
-    }
-
-    @include mobile {
-        overflow: scroll;
-        height: 580px;
-    }  
 }
 
 // Additional class styles
@@ -67,7 +56,7 @@
 }
 
 .macbook-display {
-    margin: 30px auto 60px auto;
+    margin: 30px auto;
     width: 50%;
 
     @include tablet {
@@ -87,6 +76,10 @@
     @include tablet {
         font-size: 1rem;
     }
+
+    @include mobile {
+        display: none;
+    }  
 }
 
 .project-description {
@@ -95,6 +88,15 @@
     @include tablet {
         font-size: 1rem;
     }
+
+    @include mobile {
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }  
+
+    @include carousel-adjust {
+        font-size: 0.7rem;
+    }  
 }
 
 // Buttons
@@ -130,16 +132,8 @@
 
 .view-online {
     margin: 30px 0;
-    position: absolute;
-    bottom: 0;
     text-align: center;
     width: 100%;
-
-
-    @include tablet {
-        right: 0%;
-        text-align: center;
-    }
 
     .view-online-link {
         color: $accent-dark;

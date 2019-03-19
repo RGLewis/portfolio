@@ -226,7 +226,7 @@ h4 {
   font-weight: 900; }
   @media (max-width: 900px) {
     h4 {
-      font-size: 1.5rem; } }
+      font-size: 1.3rem; } }
 
 p {
   font-size: 1.3rem;
@@ -470,8 +470,8 @@ p {
 .path {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
-  -webkit-animation: draw 5s ease-in-out alternate 2s infinite;
-  animation: draw 5s ease-in-out alternate 2s infinite; }
+  -webkit-animation: draw 4s ease-in-out alternate 2s infinite;
+  animation: draw 4s ease-in-out alternate 2s infinite; }
 
 @-webkit-keyframes draw {
   from {
@@ -649,6 +649,9 @@ p {
       width: 100%;
       padding: 20px;
       margin: 40px auto 60px auto; } }
+  @media (max-width: 600px) {
+    .work-display-container {
+      padding: 20px 10px; } }
 
 .display-flex-container {
   width: 100%;
@@ -663,18 +666,6 @@ p {
   -webkit-animation: fade 800ms;
   animation: fade 800ms;
   position: relative; }
-  @media (max-width: 1370px) {
-    .display-flex-container {
-      overflow: scroll;
-      height: 700px; } }
-  @media (max-width: 900px) {
-    .display-flex-container {
-      overflow: scroll;
-      height: 680px; } }
-  @media (max-width: 600px) {
-    .display-flex-container {
-      overflow: scroll;
-      height: 580px; } }
 
 .work-heading {
   text-align: left;
@@ -685,7 +676,7 @@ p {
       margin-left: 0; } }
 
 .macbook-display {
-  margin: 30px auto 60px auto;
+  margin: 30px auto;
   width: 50%; }
   @media (max-width: 900px) {
     .macbook-display {
@@ -701,12 +692,22 @@ p {
   @media (max-width: 900px) {
     .project-skills-para {
       font-size: 1rem; } }
+  @media (max-width: 600px) {
+    .project-skills-para {
+      display: none; } }
 
 .project-description {
   margin-top: 0; }
   @media (max-width: 900px) {
     .project-description {
       font-size: 1rem; } }
+  @media (max-width: 600px) {
+    .project-description {
+      margin-top: 20px;
+      font-size: 0.8rem; } }
+  @media (max-width: 375px) {
+    .project-description {
+      font-size: 0.7rem; } }
 
 .display-navigation {
   text-align: center; }
@@ -736,14 +737,8 @@ p {
 
 .view-online {
   margin: 30px 0;
-  position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%; }
-  @media (max-width: 900px) {
-    .view-online {
-      right: 0%;
-      text-align: center; } }
   .view-online .view-online-link {
     color: #05386b;
     font-size: 1.3rem;
