@@ -1,0 +1,66 @@
+// Class Styles
+.navAnchor {
+    text-decoration: none;
+    color: $primaryBackgroundH2;
+    font-size: 1rem;
+    font-weight: $bold;
+    line-height: $heightSmall;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 15px;
+    border: 4px dotted transparent;
+
+    &:hover {
+        color: $accentVibrant;
+    }
+}
+
+.navAnchor.active {
+    color: $accentVibrant;
+}
+
+/* Skip Link */
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 2%;
+    z-index: 999;
+    background: $primaryBackgroundH2;
+    border: 2px solid $accentVibrant;
+    color: $accentVibrant;
+    padding: 10px;
+}
+
+.skipLink:focus {
+    left: 5%;
+}
+
+// Header Nav flex styles
+.headerNav {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navLogo {
+    width: 20%;
+    justify-content: flex-start;
+}
+
+.navList {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-shrink: 1;
+}
+
+.navList .anchorRight {
+    padding-right: 5px;
+    margin-right: 0px;
+}

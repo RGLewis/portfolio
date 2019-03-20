@@ -1,0 +1,58 @@
+// Contact Nav styles
+.contactNavList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .contactNavAnchor {
+        color: $primaryText;
+        font-size: 1.2rem;
+        padding: 5px;
+
+        &:hover {
+            color: $accentVibrant;
+            transform: scale(1.5);
+        }
+    }
+
+    .contactNavAnchorLeft {
+        padding-left: 0;
+    }
+
+    .contactNavListItem {
+        padding: 10px;
+    }
+    
+    .contactNavListItemLeft {
+        padding-left: 0;
+    }
+}
+
+// Address styles
+.contactAddressInfo {
+    font-style: normal;
+    
+    .contactAddressAnchor {
+        color: $primaryText;
+        display: block;
+
+        &:hover {
+            color: $accentVibrant;
+            font-weight: $bold;
+        }
+    }
+
+    .contactAddressAnchor:nth-child(1) {
+        font-weight: $bold;
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+        line-height: $heightLarge;
+        display: block;
+        word-wrap: break-word;
+    }
+
+    .addressItem {
+        line-height: $heightMedium;
+        letter-spacing: 0.1rem;
+    }
+}

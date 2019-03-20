@@ -1,0 +1,107 @@
+// The following animations are adapted from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load
+
+// HOME PAGE HEADER ANIMATION
+@keyframes slideInFromBottom3 {
+    // On page load, the image will be off the screen bottom (100% the height away from where I've coded it to be).
+    0% {
+        transform: translateY(100%);
+    }
+    // After the 1 sec transition, the image will be at it's coded spot on the page.
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// BLOG PAGE
+// Section slides up from bottom
+@keyframes slideInFromBottom {
+    // On page load, the image will be off the screen bottom (10% the height away from where I've coded it to be).
+    0% {
+        transform: translateY(10%);
+    }
+    // After the 1 sec transition, the image will be at it's coded spot on the page.
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// CONTACT PAGE
+// Section slides up from bottom
+@keyframes slideInFromBottom2 {
+    // On page load, the image will be off the screen bottom (50% the height away from where I've coded it to be).
+    0% {
+        transform: translateY(50%);
+    }
+    // After the 1 sec transition, the image will be at it's coded spot on the page.
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// Submit Input animation from Animista
+//  * w: http://animista.net
+/**
+ * ----------------------------------------
+ * animation jello-vertical
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}

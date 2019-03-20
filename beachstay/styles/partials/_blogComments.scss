@@ -1,0 +1,54 @@
+// Blog Comments flex, padding and additional styles
+.commentsSection {
+    padding: 0 8% 0 16.67%;
+
+    .commentsHeading {
+        color: $primaryText;
+        padding: 40px 0;
+    }
+
+    .blogComment {
+        display: flex;
+        flex-direction: row;
+
+        .userImage {
+            width: 14%;
+            border: 5px solid transparent;
+
+            &:hover .userProfilePic {
+                border: 5px solid $accentVibrant;
+            }
+        }
+
+        .commentContent {
+            margin-left: 5%;
+            width: calc((100% - 14%) - 5%);
+        }
+    }
+
+    .userImageAnchor {
+        display: block;
+    }
+
+    .comment1 {
+        padding-bottom: 100px;
+    }
+
+    .comment2 {
+        padding-bottom: 50px;
+    }
+}
+
+// Font styles
+.commentInfo, .userAccount {
+    color: $accentText;
+    font-weight: $bold;
+}
+
+.commentInfo {
+    padding-bottom: 10px;
+}
+
+.userAccount:hover {
+    color: $accentVibrant;
+}

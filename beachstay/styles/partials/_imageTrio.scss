@@ -1,0 +1,24 @@
+// Background color and padding
+.imageTrio {
+    background: $secondaryBackground;
+    padding:$sectionPadding;
+}
+
+// Flex and margin styles
+.imageTrioContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.galleryImage {
+    width: calc ((100% / 3) - 6%);
+    margin: 0 1.5%;
+}
+
+.galleryImage:nth-child(1) {
+    margin-left: 0;
+}
+
+.galleryImage:nth-child(3) {
+    margin-right: 0;
+}

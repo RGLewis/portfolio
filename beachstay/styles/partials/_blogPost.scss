@@ -1,0 +1,35 @@
+// Blog Post margin, border and padding styles
+.blogWrittenContainer {
+    margin-right: -20px;
+    border-bottom: 5px solid $accentVibrant;
+    border-right: 5px solid $accentVibrant;
+    padding: 80px 8% 40px 16.67%;
+}
+
+.blogPara {
+    padding-top: 25px;
+}
+
+// Image box shadow 
+.blogPostImage {
+    box-shadow: 30px 30px 0px -10px $accentVibrant;
+}
+
+// Blog Post font styles
+.blogPostTitle {
+    font-size: 1.65rem;
+}
+
+.blogPostInfo, .blogAnchor {
+    color: $accentText;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.blogAnchor {
+    font-weight: $bold;
+
+    &:hover {
+        color: $accentVibrant;
+    }
+}

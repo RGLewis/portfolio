@@ -1,0 +1,48 @@
+// Blog Aside padding styles 
+.blogAsidePara, .blogAsideListItem {
+    padding-left: 1%;
+}
+
+.blogMission, .recentPosts {
+    padding-right: 5%;
+}
+
+.recentPosts {
+    padding-top: 20px;
+}
+
+.blogAsidePara {
+    padding-bottom: $beforeMoreAnchor;
+}
+
+// Font and List Styles 
+.blogAsideHeading {
+    font-size: 1.25rem;
+    font-weight: $bold;
+    line-height: $heightLarge;
+    letter-spacing: 0.1rem;
+    color: $accentText;
+    padding: 10px 0;
+}
+
+.blogOrderedList {
+	list-style: disc;
+
+    .blogAsideListItem {
+        list-style-position: inside;
+        color: $accentVibrant;
+    }
+}
+
+.blogAsideAnchor {
+    font-size: 1rem;
+    font-weight: $regular;
+    line-height: $heightSmall;
+    letter-spacing: 0.1rem;
+    color: $primaryText;
+    margin-left: 1%;
+
+    &:hover {
+        color: $accentVibrant;
+    }
+}

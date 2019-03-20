@@ -1,0 +1,531 @@
+// Adjust Negative Margins and padding in the "TO KNOW" Section, adjust the size of the email anchor on the CONTACT page
+@media (max-width: 1500px) {
+    .toKnowImageLeft {
+        margin-top: -10%;
+    }
+
+    .toKnowImageRight {
+        margin-bottom: -10%;
+    }
+
+    .topLeftImage, .bottomLeftWritten  {
+        padding-right: 4%;
+    }
+
+    .topRightWritten, .bottomRightImage  {
+        padding-left: 4%;
+    }
+
+    .topRightWritten {
+        padding-right: 5%;
+    }
+
+    .bottomLeftWritten {
+        padding-left: 5%;
+    }
+
+    // CONTACT PAGE
+    // Adjust size of email anchor
+    .contactAddressInfo {
+        .contactAddressAnchor:nth-child(1) {
+            font-weight: $bold;
+            font-size: 1rem;
+        }
+    }    
+}
+
+// Adjust Blog Article/Aside percentages
+@media (max-width: 1350px) {
+    .blogFlexContainer {
+        .blogPostContainer {
+            width: 60%;
+            margin-right: 8%;
+        }
+
+        .blogAside {
+            width: 35%;
+            padding-top: 250px;
+        }
+    }
+
+    .blogCommentForm input[type="text"], .blogCommentForm input[type="email"] {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }   
+}
+
+// Adjust Padding in the "TO KNOW" Section
+@media (max-width: 1320px) {
+    .toKnowFlexItem:nth-child(even) {
+        padding-top: 10px;
+    }
+
+    .toKnowTopRow, .toKnowBottomRow {
+        align-items: flex-start;
+    }
+}
+
+// Adjust widths on Contact Page
+@media (max-width: 1350px) {
+    // CONTACT PAGE
+    .contactFlexContainer {            
+        .contactFormContainer {
+            width: 70%;
+            margin: 0 0% 130px 0;
+            transform: translateX(-5%);
+            background: $primaryBackgroundH2;
+            padding: 5% 5% 0px 5%;
+        }
+
+        .contactInfoContainer {
+            width: 30%;
+            padding-left: 5%;
+            padding-top: 250px;
+        }
+    }
+
+    // Adjust form input widths
+    .contactFormContainer input[type="text"], .contactFormContainer input[type="email"] {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Adjust flex in the "TO KNOW" Section to Column, adjust margin and padding accordingly. Adjust width of inputs of form on CONTACT page.
+@media (max-width: 1100px) {
+    .thingsToKnow {
+        padding: $sectionPadding;
+    }
+    
+    .toKnowContainer {
+        margin: 0 10%;
+    }
+
+    .toKnowTopRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toKnowBottomRow {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .toKnowFlexItem {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .toKnowImageLeft {
+        margin-top: 0%;
+    }
+
+    .toKnowImageRight {
+        margin-bottom: 0%;
+    }
+}
+
+// Adjust height of lower header and logo
+@media (max-width: 1220px) {
+    // HOME PAGE
+    .lowerHeader {
+        margin-top: -50%;
+    }
+
+    .largeLogoContainer {
+        margin-left: 0;
+        margin-top: 150px;
+        align-items: center;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+// RESPONSIVE MENU
+    .responsiveMenu,
+	.exitMenu {
+		display: block;
+    }
+
+    // Using just the Nav List (ul) for responsive menu, in order to preserve the placement of the Nav Logo, top left. As the class is already flexed, I've used opacity 0 / opacity 1, instead of display: block.
+    .navList {
+        opacity: 0;
+        width: 100%;
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primaryText;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+            
+            .navAnchor {
+                font-size: 2rem;
+            }
+            
+            .navAnchor.active {
+                color: $primaryBackgroundH2;
+            }
+
+            .navAnchor:hover {
+                color: $accentVibrant;
+            }
+    }
+
+    // HOME PAGE
+    // HOME HEADER STYLES
+    // Adjust the height of lower header and Logo Container
+    .lowerHeader {
+        margin-top: -60%;
+    }
+
+    .largeLogoContainer {
+        margin-left: 0;
+        margin-top: 150px;
+        align-items: center;
+    }
+
+    // VISIT GUYANA
+    .guyanaFlexContainer {
+        flex-direction: column;
+        align-items: center;
+
+        .guyanaContentContainer {
+            width: 100%;
+            padding-right: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .guyanaImageContainer {
+            width: 80%;
+            padding-left: 0;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding-bottom: $imageOnTop;
+        }
+
+        .guyanaImage {
+            box-shadow: -17px 17px 0px 0px $accentVibrant;
+        }
+    }
+
+    // ABOUT QUAD
+    .aboutQuad {
+        padding-bottom: 0;
+    }
+    .aboutQuadContainer {
+        flex-direction: column;
+
+        .aboutItem {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom:80px;
+        }
+
+        .aboutItem:nth-child(odd) {
+            margin-right: 0px;
+        }
+    }
+    
+    // FREE TRIP
+    .freeTripContent {
+        padding: 80px 0;
+        margin: 0 10%;
+    }
+
+    // BLOG 
+    .blogFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+
+        .blogPostContainer {
+            width: 80%;
+            margin-right: 0;
+
+            .blogWrittenContainer {
+                border-left: 5px solid $accentVibrant;
+            }
+        }
+
+        .blogAside {
+            width: 80%;
+            padding: 50px 0 80px 0;
+        }
+    }
+
+    .postInfo {
+        text-align: center;
+    }
+    
+    // BLOG COMMENTS and FORM SECTION
+    .commentsSection {
+        padding: 0 5% 0 5%;
+    }
+
+    .blogCommentForm {
+        padding: 0 5% 0 5%; 
+    }
+
+    // BLOG ASIDE
+    .blogAsidePara, .blogAsideListItem {
+        padding-left: 0%;
+    }
+
+    .blogMission, .recentPosts {
+        padding-right: 0%;
+    }
+
+    .blogAsideFlexContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 105px 50px 80px 50px;
+        border: 5px solid $accentVibrant;
+        
+        .blogAsideImage {
+            width: 50%;
+        }
+
+        .blogMission {
+            width: 100%;
+            text-align: center;
+        }
+
+        .recentPosts {
+            width: 100%;
+        }
+    }
+
+    .blogAsideHeading {
+        text-align: center;
+    }
+
+    .blogAsidePara, .blogAsideListItem {
+        padding-left: 0;
+    }
+
+    .blogMission, .recentPosts {
+        padding-right: 0;
+    }
+
+    .recentPosts {
+        padding-top: 20px;
+    }
+
+    .blogAsideAnchor {
+        margin-left: 0%;
+    }
+
+    // CONTACT PAGE
+    .contactFlexContainer {
+        flex-direction: column;
+        margin-top: 50px;
+            
+        .contactFormContainer {
+            width: 100%;
+            margin: 0;
+        }
+
+        .contactInfoContainer {
+            width: 100%;
+            padding-left: 0%;
+            padding: 80px 0;
+            text-align: center;
+
+            .contactNavList {
+                justify-content: center;
+            }
+        }
+    }
+
+    .contactFormContainer {
+        box-shadow: 20px 20px 0px 0px $accentVibrant;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    // GLOBAL FONT STYLES
+    html{
+        font-size: 112.5%;
+    }
+
+    .innerWrapper {
+        width: 85%;
+    }
+
+    // HOME PAGE
+    // HEADER
+    // Display none on the sunglasses image in the header
+    .lowerHeader {
+        display: none;
+    }
+
+    // Adjust position of Header Large Logo
+    .largeLogoContainer {
+        margin-top: 70px;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    // Adjust margins for change to 85% width in Inner Wrapper
+    // TO KNOW SECTION
+    .toKnowContainer {
+        margin: 0 7.5%;
+    }
+
+    // FREE TRIP
+    .freeTripContent {
+        margin: 0 7.5%;
+    }
+    
+    // BLOG 
+    .blogHeader, .contactHeader {
+        min-height: 50vh;
+    }
+
+    .blogPostContainer {
+        width: 85%;
+    }
+
+    .blogAside {
+        width: 85%;
+    }
+    
+    // BLOG COMMENTS and FORM SECTION
+    .commentsSection {
+        padding: 0 2% 0 2%;
+    }
+
+    .blogCommentForm {
+        padding: 0 2% 0 2%; 
+    }
+
+    .blogPostTitle {
+        font-size: 1.3rem;
+        line-height: $heightMedium;
+    }
+
+    // CONTACT PAGE
+    .contactPageHeader {
+        line-height: 80px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    // GLOBAL STYLES
+    p {
+        font-size: 0.9rem;
+    }
+    
+    // HOME PAGE
+    // HEADER
+    h1, .welcome {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .upperHeaderContainer {
+        min-height: 40vh;
+        width: 100%;
+        background-image: url(../assets/homeImage1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .largeLogoContainer {
+        margin-top: 0px;
+        min-height: 30vh;
+    }
+
+    // VISIT GUYANA
+    .guyanaImageContainer {
+            width: 100%;
+        }
+
+    // IMAGE TRIO
+    // Display: none on last image (consulted with Fatima)
+    .imageTrio2 {
+        display: none;
+    }
+
+    .galleryImage {
+        width: calc ((100% / 2) - 3%);
+    }
+
+    // ABOUT QUAD
+    // Display: none on icons (consulted with Fatima)
+    .aboutIconContainer {
+        display: none;
+    }
+
+    .aboutQuadContainer .aboutWrittenContent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutItem {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .aboutQuadContainer {
+        width: 100%;
+    }
+
+    // BLOG PAGE
+    .blogAsideFlexContainer {
+        padding: 80px 5px;
+        border: 3px solid $accentVibrant;
+    }
+
+    // Adjust size of anchor
+    .blogAsideAnchor {
+        font-size: 0.9rem;
+    }
+
+    .commentsSection {
+        
+        .blogComment {
+            
+            .userImage:hover .userProfilePic {
+                border: 3px solid $accentVibrant;
+            }
+        }
+    }
+
+    // CONTACT PAGE
+    .contactFormContainer {
+        box-shadow: 5px 5px 0px 0px $accentVibrant;
+    }
+
+    .addressItem {
+        font-size: 0.85rem;
+    }
+}
+
+// Height Media query
+@media (max-height: 700px) {
+    .blog, .contactMethod {
+        margin-top: -150px;
+    }
+}

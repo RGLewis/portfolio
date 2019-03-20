@@ -1,0 +1,24 @@
+// Section positioning
+.blog {
+    position: relative;
+    z-index: 10;
+    margin-top: -250px;
+    animation: 0.7s ease-out 0s 1 slideInFromBottom;
+}
+
+// flex styles
+.blogFlexContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+
+    .blogPostContainer {
+        width: 63%;
+        margin-right: 13.5%;
+    }
+
+    .blogAside {
+        width: 23.5%;
+        padding-top: 250px;
+    }
+}
