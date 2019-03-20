@@ -25,6 +25,7 @@ $carousel-adjust: 390px;
 $mobile-width: 600px;
 $tablet-width: 900px;
 $desktop-width: 1200px;
+$large-screen-width: 2000px;
 
 @mixin final {
     @media (max-width: #{$final-width})  {
@@ -51,6 +52,12 @@ $desktop-width: 1200px;
 
 @mixin desktop {
     @media (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media (min-width: #{$large-screen-width}) {
         @content;
     }
 }

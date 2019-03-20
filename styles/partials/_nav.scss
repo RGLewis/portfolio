@@ -102,6 +102,10 @@
     .nav-item {
         margin: 0 5%;
 
+        @include large-screen {
+            margin: 0 2%;
+        }
+
         .nav-anchor {
             padding: 10px;
             color: $accent-dark;
@@ -128,9 +132,16 @@
 // Toggle class styles
 .show-nav-list {
     left: 10%;
+
+    @include large-screen {
+        left: 40%;
+    }
+
     @include tablet {
         left: 0;
     }
+
+    
 }
 
 .show-nav-container {

@@ -436,6 +436,9 @@ p {
       z-index: 50; } }
   .nav-list .nav-item {
     margin: 0 5%; }
+    @media (min-width: 2000px) {
+      .nav-list .nav-item {
+        margin: 0 2%; } }
     .nav-list .nav-item .nav-anchor {
       padding: 10px;
       color: #05386b;
@@ -453,6 +456,9 @@ p {
 
 .show-nav-list {
   left: 10%; }
+  @media (min-width: 2000px) {
+    .show-nav-list {
+      left: 40%; } }
   @media (max-width: 900px) {
     .show-nav-list {
       left: 0; } }
