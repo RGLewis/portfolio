@@ -158,3 +158,30 @@ textarea {
 .contact-heading {
     margin-bottom: 20px;
 }
+
+.contact-email {
+   text-align: center;
+
+    @include mobile {
+       text-align: left;
+    }
+
+   .contact-para {
+       font-size: 1rem;
+   }
+
+   .contact-email-anchor {
+        font-weight: $black;
+        text-decoration: none;
+        color: $accent-dark;
+        border: 1px solid transparent;
+        
+        &:hover {
+            border-bottom: 1px solid $accent-light;
+        }
+
+        &:active, &:focus {
+            border: 1px solid $accent-light;
+        }
+   }
+}

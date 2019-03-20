@@ -921,6 +921,23 @@ textarea {
 .contact-heading {
   margin-bottom: 20px; }
 
+.contact-email {
+  text-align: center; }
+  @media (max-width: 600px) {
+    .contact-email {
+      text-align: left; } }
+  .contact-email .contact-para {
+    font-size: 1rem; }
+  .contact-email .contact-email-anchor {
+    font-weight: 900;
+    text-decoration: none;
+    color: #05386b;
+    border: 1px solid transparent; }
+    .contact-email .contact-email-anchor:hover {
+      border-bottom: 1px solid #5cdb95; }
+    .contact-email .contact-email-anchor:active, .contact-email .contact-email-anchor:focus {
+      border: 1px solid #5cdb95; }
+
 footer {
   background: #f3f3f3;
   padding: 40px 0 30px 0;
